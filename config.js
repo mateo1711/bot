@@ -33,7 +33,7 @@ class EnterpriseConfigurationManager {
                 host: EnvironmentVariableProcessor.LAVALINK_HOST || "pnode1.danbot.host", 
                 port: EnvironmentVariableProcessor.LAVALINK_PORT || 1351,       
                 password: EnvironmentVariableProcessor.LAVALINK_PASSWORD || "cocaine ", 
-                secure: EnvironmentVariableProcessor.LAVALINK_SECURE === 'false' || false
+                secure: EnvironmentVariableProcessor.LAVALINK_SECURE === 'false'
             },
             
             /**
@@ -101,4 +101,5 @@ module.exports = primaryApplicationConfiguration;
  * Never share your bot token or database URI publicly!
  * Use environment variables in production!
  */
+
 
