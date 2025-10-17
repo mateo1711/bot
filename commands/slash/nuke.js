@@ -1,8 +1,8 @@
 module.exports = {
-    name: 'clean',
-    description: 'Clean messages!",
+    name: 'Nuke',
+    description: 'Nuke messages!",
     async execute(message, args)  {
-        if(!args[0]) return message.reply("please enter the amount of messages that you want to clean!");
+        if(!args[0]) return message.reply("please enter the amount of messages that you want to Nuke!");
         if(isNaN(args[0])) return message.reply("please enter a real number!");
         if(args[0] > 100) return message.reply("You cannot delete more than 100 messages!");
         if(args[0] < 1) return message.reply("You must delete at least one message!");
@@ -12,4 +12,5 @@ module.exports = {
         });
     }
 };
+
 
